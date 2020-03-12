@@ -58,12 +58,15 @@ body{
     padding: 0 5px;
     background-color: #1b1b1b;
     z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    top: 60px;
 }
 
 .nav-sidebar ul {
     padding-top: 15px;
     overflow: hidden;
     visibility: hidden;
+    padding-left: 0px;
 }
 
 .nav-sidebar ul li{
@@ -81,6 +84,8 @@ body{
     font-family: arial;
     font-size: 16px;
     white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-sidebar ul li a:hover{
