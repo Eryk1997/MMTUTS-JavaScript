@@ -17,14 +17,11 @@ let GameManager = {
             case 'Hunter':
                 player = new Player(classType, 200, 0, 50, 200, 100);
                 break;
-
-            default:
-                break;
         }
         let getInterface = document.querySelector(".interface");
         getInterface.innerHTML = '<img src="img/player/' + classType.toLowerCase() +
         '.png" class="img-avatar"><div><h3>' + classType +
-        '</h3><p>Health: ' + player.health + '</p><p>Mana: ' + player.mana +
+        '</h3><p class="health-player">Health: ' + player.health + '</p><p>Mana: ' + player.mana +
         '</p><p>Strength: ' + player.strength + '</p><p>Agility: ' + player.agility +
         '</p><p>Speed: ' + player.speed + '</p></div>';
     },
