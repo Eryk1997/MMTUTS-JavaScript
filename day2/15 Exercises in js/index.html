@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <form>
+        <input type="text" id='value1'>
+        <select id='operator'>
+            <option value="add">+</option>
+            <option value="min">-</option>
+            <option value="div">/</option>
+            <option value="mul">*</option>
+        </select>
+        <input type="text" id='value2'>
+        <button type='button' onclick="calc()">Calculate</button>
+
+
+    <table id='tableStyle'>
+            <div id='result'></div>
+        <tr>
+            <td><input type="button" id='number1' value="1"></td>
+            <td><input type="button" id='number2' value="2"></td>
+            <td><input type="button" id='number3' value="3"></td>
+            <td><input type="button" id='add' value="+"></td>
+        </tr>
+        <tr>
+            <td><input type="button" id='number4' value="4"></td>
+            <td><input type="button" id='number5' value="5"></td>
+            <td><input type="button" id='number6' value="6"></td>
+            <td><input type="button" id='min' value="-"></td>
+        </tr>
+        <tr>
+            <td><input type="button" id='number7' value="7"></td>
+            <td><input type="button" id='number8' value="8"></td>
+            <td><input type="button" id='number9' value="9"></td>
+            <td><input type="button" id='div' value="/"></td>
+        </tr>
+        <tr>
+            <td><input type="button" id='number0' value="0"></td>
+            <td><input type="button" id='clean' value="C"></td>
+            <td><button type='button' onclick="calc()">=</button></td>
+            <td><input type="button" id='mul' value="*"></td>
+        </tr>
+    </table>
+    </form>
+
+
+
+
+</body>
+<script src="js/main.js"></script>
+</html>
